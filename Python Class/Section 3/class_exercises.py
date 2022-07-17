@@ -13,6 +13,9 @@ if height >= min_height:
     elif age <= 18:
         print("Youth Tickets are $7.\n ")
         ticket_price = 7
+    elif age >= 45 and age <= 55:
+        print("Ticket prices for your age are $0.\n")
+        ticket_price = 0
     else:
         print("Adult Tickets are $12.\n")
         ticket_price = 12
@@ -20,8 +23,8 @@ if height >= min_height:
     wants_photo = input("Do you want a photo taken? Y or N: \n")
     if wants_photo == "y":
         total = ticket_price + 3
-        print(f"The total price of your ticket is {total} ")
+        print(f"The total price of your ticket is ${total} ")
     else:
-        print(f"The total price of your ticket is {ticket_price} ")
+        print(f"The total price of your ticket is ${ticket_price} ")
 else:
     print("You are not tall enough to ride.")
