@@ -28,7 +28,9 @@ count_love = int(number_of_l + number_of_o + number_of_v + number_of_e)
 
 total = int(str(count_true) + str(count_love))
 
-if total <= 10 or > 90:
+if total <= 10 or total > 90:
     print(f"Your score is {total}, and you go together like coke and mentos.")
 elif total >= 40 and total <= 50:
-    print("Your score is {total}, and you are alright together. ")
+    print(f"Your score is {total}, and you are alright together. ")
+else:
+    print(f"Your score is {total}")
