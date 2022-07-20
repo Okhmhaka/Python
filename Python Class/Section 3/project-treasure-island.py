@@ -38,10 +38,28 @@ print("After washing ashore, you grab your boat and pull it out of the water.")
 print("Up ahead you notice a opening in the island vegetation and you decide to explore.")
 print("After walking down the paht for some time you come to a crossroad.")
 direction = input(
-    "You have a choice to go left or right.  Which way do you go? ")
+    "You have a choice to go left or right.\nWhich way do you go? ")
 
 direction = direction.lower()
 
 if direction == "left":
     print("You've come to a lake with a small island in the middle.")
-    input("Should you wait for a boat or swim? ")
+    boat_swim = input("Should you wait for a boat or swim? ")
+    boat_swim.lower()
+    if boat_swim == "swim":
+        print("You arrived at the island unharmed but tired.")
+        print("There is a house with three doors.  One red, one yellow, and one blue.")
+        color = input("which color door do you choose? ")
+        color = color.lower()
+        if color == "red":
+            print("The room is a trap and full of fire!!  Game Over!")
+        elif color == 'yellow':
+            print("You found the treasure!  You win!")
+        else:
+            print("You enter a room of beasts and are eaten!  Game Over!")
+
+    else:
+        print("There is not boat on the island. You died to wild animals waiting on a boat. Game Over!")
+
+else:
+    print("You fell in a hole covered by vegetation.  Game Over")
