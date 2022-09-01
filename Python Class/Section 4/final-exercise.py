@@ -3,6 +3,7 @@
 # Below is the ascii code for rock, paper, and scissors.
 
 import random
+
 rock = '''
     _______
 ---'   ____)
@@ -36,4 +37,13 @@ scissors = '''
 
 print("Welcome to the Rock, Paper, Scissors game.")
 user_input = input(
-    "What is your choice? Type 0 for Rock, 1 for Paper, and 2 for Scissors.")
+    "What is your choice? Type 0 for Rock, 1 for Paper, and 2 for Scissors: ")
+
+
+# Random choice for the computer.
+random_integer = random.randint(0, 2)
+# Print the random integer just to test it
+# print(random_integer)
+
+if user_input == 0:
+    print(f"You chose: {rock}")
