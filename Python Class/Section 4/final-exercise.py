@@ -46,4 +46,11 @@ random_integer = random.randint(0, 2)
 # print(random_integer)
 
 if user_input == 0:
-    print(f"You chose: {rock}")
+    if random_integer == 0:
+        print(f"You chose rock: \n{rock}")
+        print(f"The computer chose rock: \n{rock}")
+        print("You both chose Rock.  Tie Game!! ")
+    elif random_integer == 1:
+        print(f"You chose rock: \n{rock}")
+        print(f"The computer chose paper: \n{paper}")
+        print("Paper trumps rock, you lose!! ")
