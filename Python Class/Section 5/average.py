@@ -17,3 +17,5 @@ average_height = round(average_height)
 print(f"The sum of the student height is {total_height}")
 print(f"The total number of students measured is {count}")
 print(f"The average student height is {average_height}.")
+
+# Change just to commit
