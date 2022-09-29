@@ -18,14 +18,15 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 # Start out by making password an empty string with:
 password = ""
 
-#Write a for loop to pull the number of characters from the lists
+# Write a for loop to pull the number of characters from the lists
 # This for loop will pick a character withing the letters list based on the number of letters desired from user input.
 for char in range(1, nr_letters + 1):
-    random_char = random.choice(letters) # the random.choice will let the program pick the random letter withing letters list
+    # the random.choice will let the program pick the random letter withing letters list
+    random_char = random.choice(letters)
     password += random_char
-#print(password)
+# print(password)
 
-for char in range(1, nr_numbers +1):
+for char in range(1, nr_numbers + 1):
     password += random.choice(numbers)
 
 for char in range(1, nr_symbols + 1):
@@ -47,9 +48,9 @@ print(secure_pass)
 
 password_list = []
 for char in range(1, nr_letters + 1):
-    password_list += random.choice(letters) 
+    password_list += random.choice(letters)
 
-for char in range(1, nr_numbers +1):
+for char in range(1, nr_numbers + 1):
     password_list += random.choice(numbers)
 
 for char in range(1, nr_symbols + 1):
