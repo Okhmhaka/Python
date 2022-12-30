@@ -17,7 +17,6 @@ for _ in range(word_length):
 # Insert a while loop so the user can keep guessing. The while loop should stop once all letters have been guessed.
 end_of_game = False
 
-#guess = input("Guess a letter: ").lower()
 while not end_of_game:
     guess = input("Guess a letter: ").lower()
     print(display)
